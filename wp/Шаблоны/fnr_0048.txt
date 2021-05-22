@@ -1,0 +1,90 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "a98409f8-f914-44cd-9730-62ac1869e463",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Отсканируйте штрихкод идентификатора тары с ТМЦ",
+                "table": [
+                  [
+                    "Место хранения"
+                  ],
+                  [
+                    "{{.value.containerFrom.number}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ContainerForInventorysation",
+                  "url": "{{.value.containerFrom.picture}}"
+                }
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "ID тары"
+                  ],
+                  [
+                    "{{.value.containerFrom.id}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "binding": {
+                  "id": "{{.value.containerFrom.id}}",
+                  "type": "container",
+                  "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.containerFrom.id}}$",
+                  "message": "Отсканирован неверный ID тары"
+                },
+                "placeholder": "Отсканируйте ID тары",
+                "scanner": true,
+                "required": true
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Разместите тару на своём рабочем месте"
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+"input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Извлеките из ячейки все ТМЦ. Для подсчета - последовательно сканируйте штрихкод на каждой следующей единице ТМЦ.",
+                "table": [
+                  [
+                    "Наименование"
+                  ],
+                  [
+                    "{{.value.item.description}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "ID ТМЦ"
+                  ],
+                  [
+                    "{{.value.item.number}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "binding": {
+                  "id": "{{.value.item.id}}",
+                  "type": "containerFrom",
+                  "field": "factId"
+                },
+                "placeholder": "Отсканируйте ID ТМЦ",
+                "preValue": "{{.value.item.id}}",
+                "scanner": true,
+                "required": true,
+                "multiline": true
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "binding": {
+                  "id": "{{.value.item.quantity}}",
+                  "type": "containerFrom",
+                  "field": "factId"
+                },
+                "pre": "Количество ",
+                "preValue": "{{.value.item.quantity}}"
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "После сканирования ID всех ТМЦ из данной ячейки нажмите кнопку [Далее]"
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

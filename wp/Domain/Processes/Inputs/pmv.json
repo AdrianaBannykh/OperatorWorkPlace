@@ -1,0 +1,52 @@
+﻿{
+  "value": {
+    "containers": [
+      {
+        "id": "T0000458",
+        "weight": 2.85,
+        "size": "47x22x14",
+        "location": {
+          "from": {
+            "id": "159 G",
+            "name": "Терминал",
+            "map": {
+              "url": "http.."
+            }
+          },
+          "to": {
+            "id": "160 F",
+            "name": "Терминал",
+            "map": {
+              "url": "http.."
+            }
+          }
+        }
+      },
+      {
+        "id": "T0001158",
+        "weight": 0.45,
+        "size": "12x10x7",
+        "location": {
+          "from": {
+            "id": "159 A",
+            "name": "Терминал",
+            "map": {
+              "url": "http.."
+            }
+          },
+          "to": {
+            "id": "180 K",
+            "name": "Терминал",
+            "map": {
+              "url": "http.."
+            }
+          }
+        }
+      }
+    ],
+    "resource": {
+      "id": "T0000123",
+      "name": "Тележка"
+    }
+  }
+}

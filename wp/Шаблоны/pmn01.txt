@@ -1,0 +1,9 @@
+[
+  {
+    "operationId": "453facc2-dc51-4837-b8f7-e62568b4f63b",
+    "operationName": "fnr_0042",
+    "value": {
+      "tasks": "{{.value.tasks}}"
+    }
+  }
+]

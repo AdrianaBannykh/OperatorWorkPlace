@@ -1,0 +1,62 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "18573c8c-8592-42a0-b8cb-4bc0e9d5c43f",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Найдите тару с указанным ниже обозначением и подтвердите, отсканировав ID тары",
+                "table": [
+                  [
+                    "Обозначение тары"
+                  ],
+                  [
+                    "{{.value.container.id}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "title": "Отсканируйте идентификатор тары",
+              "input": {
+                "binding": {
+                  "id": "{{.value.container.id}}",
+                  "type": "container",
+                  "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.container.id}}$",
+                  "message": "Отсканирован неверный  идентификатор тары"
+                },
+                "placeholder": "Отсканируйте ID тары",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

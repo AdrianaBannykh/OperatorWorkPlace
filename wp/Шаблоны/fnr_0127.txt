@@ -1,0 +1,60 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "ce086e2a-11e6-4586-8881-174be3bfa49f",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "name": "List",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Введите дополнительную информацию для запроса ТКП"
+              }
+            },
+            {
+              "name": "Dropdown",
+              "input": {
+                "title": "Адрес доставки",
+                "items": [
+                  {
+                    "id": 1,
+                    "name": "{{.value.suppliers[0].address}}"
+                  },
+                  {
+                    "id": 2,
+                    "name": "{{.value.suppliers[1].address}}"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "title": "Ожидаемая дата получения ТКП",
+                "type": "date"
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "title": "Примечание"
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "title": "Дополнительный файл"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "e59b92ba-c401-4e46-a1ae-8a3f7d9781c7",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Извлеките из ячейки все находящиеся в ней ТМЦ.",
+                "table": [
+                  [
+                    "Наименование"
+                  ],
+                  [
+                    "{{.value.item.description}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "Обозначение"
+                  ],
+                  [
+                    "{{.value.item.number}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "title": "Посчитайте и введите общее количество ТМЦ в поле ниже:",
+                "binding": {
+                  "id": "{{.value.item.id}}",
+                  "type": "item",
+                  "field": "quantity"
+                },
+                "required": true
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "После подсчёта всех единиц данных ТМЦ нажмите кнопку [Далее]"
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+﻿{
+  "value": {
+    "placeOfControl": "Кабинет проведения входного контроля",
+    "cargoPlaces": [
+      {
+        "id": "a6d54c6c-53f0-4366-abe7-a9f454ab0855",
+        "typePackaging": {
+          "name": "Single cargo place",
+          "material": "Картон"
+        },
+        "storage": "mx-01-01"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Рохля",
+        "location": "Склад"
+      }
+    ],
+    "containers": [],
+    "items": [
+      {
+        "id": "e9271fe9-35ed-495b-97b3-eec24c72a0fd",
+        "container": "Azione",
+        "cell": "",
+        "number": "00131901",
+        "name": "Test",
+        "unit": "PZ",
+        "quantity": 15.0,
+        "typeCode": null,
+        "imastId": 112
+      },
+      {
+        "id": "1a2defca-62ec-4ead-b2f3-74b80105d162",
+        "container": "Azione",
+        "cell": "",
+        "number": "00131902",
+        "name": "Spina elettrica A ED A 139 MR83 00 0201 000 <Р> \"INTERCONTEC\"",
+        "unit": "PZ",
+        "quantity": 15.0,
+        "typeCode": null,
+        "imastId": 159
+      }
+    ]
+  }
+}

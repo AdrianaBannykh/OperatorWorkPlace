@@ -1,0 +1,85 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "8b5babbc-62fb-4b14-b936-894673e786d9",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Извлеките из тары ТМЦ, указанную в таблице ниже",
+                "table": [
+                  [
+                    "Наименование"
+                  ],
+                  [
+                    "{{.value.slot.item.description}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ItemPicture",
+                  "url": "{{.value.slot.item.picture}}"
+                }
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "ID ТМЦ"
+                  ],
+                  [
+                    "{{.value.slot.item.number}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "title": "Отсканируйте штрихкод ТМЦ",
+              "input": {
+                "binding": {
+                  "id": "{{.value.slot.item.id}}",
+                  "type": "item",
+                  "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.slot.item.id}}$",
+                  "message": "Отсканирован неверный идентификатор "
+                },
+                "placeholder": "Обозначение идентификатора",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

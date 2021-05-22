@@ -1,0 +1,56 @@
+﻿{
+  "value": {
+    "cargoPlaces": [
+      {
+        "id": "f77e94ae-0900-4f95-83af-f5b08de2c309",
+        "typePackaging": {
+          "id": "1",
+          "name": "Collo singolo"
+        },
+        "weight": {
+          "value": "12.3",
+          "unit": {
+            "name": "kg"
+          }
+        },
+        "storage": {
+          "name": "Azione",
+          "position": ""
+        }
+      },
+      {
+        "id": "1d00181b-5cbc-4611-aef0-b9918b9b51cc",
+        "typePackaging": {
+          "id": "2",
+          "name": "Collo-pallet"
+        },
+        "weight": {
+          "value": "55.4",
+          "unit": {
+            "name": "kg"
+          }
+        },
+        "storage": {
+          "name": "Azione",
+          "position": ""
+        }
+      }
+    ],
+    "resources": [
+      {
+        "resourceType": {
+          "name": "Camion"
+        },
+        "location": "Azione"
+      }
+    ],
+    "dock": {
+      "number": "Azione"
+    },
+    "car": {
+      "id": "f084bfac-7b66-4c8e-8edf-dda525432c0d",
+      "number": "E001KX97"
+    },
+    "documents": []
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "{{$deviation_title}}": "Поставщик отсутсвует",
+  "{{$table}}": {
+    "key": "number",
+    "header": [
+      "Наименование",
+      "ИНН"
+    ],
+    "fields": [
+      "firstName",
+      "inn"
+    ]
+  },
+  "componentId": "d3007faf-3dd7-46d5-9e22-8a726f89e06e",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "Dropdown",
+              "input": {
+                "items": [
+                  {
+                    "id": 1,
+                    "name": "{{$table .value.suppliers}}"
+                  },
+                  {
+                    "id": 2,
+                    "name": "IT"
+                  },
+                  {
+                    "id": 3,
+                    "name": "ParamsTable"
+                  }
+                ]
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

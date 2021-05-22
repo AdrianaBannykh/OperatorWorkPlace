@@ -1,0 +1,59 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "72f83c15-5c42-4a19-9138-64371877ef34",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Отсканируйте штрихкод идентификатора тары, указанной в таблице:",
+                "table": [
+                  [
+                    "Наименование",
+                    "Обозначение"
+                  ],
+                  [
+                    "Тара",
+                    "{{.value.containerTo.id}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "binding": {
+                  "id": "{{.value.containerTo.id}}",
+                  "type": "containerTo",
+                  "field": "factId"
+                },
+                "placeholder": "Обозначение идентификатора",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

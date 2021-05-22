@@ -1,0 +1,46 @@
+{
+  "{{$table}}": {
+    "key": "place",
+    "group": true,
+    "header": [
+      "Помещение",
+      "Место хранения"
+    ],
+    "fields": [
+      "placement",
+      "number"
+    ]
+  },
+  "componentId": "61794d97-57f7-41a3-ba76-bff37b0d7512",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Пройдите к указанному месту хранения",
+                "table": "{{$table .value.location.containers}}"
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ContainerForInventorysation",
+                  "url": "{{.value.location.picture}}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

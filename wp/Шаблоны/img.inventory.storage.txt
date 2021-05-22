@@ -1,0 +1,76 @@
+[
+  {
+    "operationId": "d520eef4-40e4-4c73-961b-052f22eac3ce",
+    "operationName": "fnr_0047",
+    "value": {
+      "location": "{{.value.location}}"
+    }
+  },
+  {
+    "{{foreach .value.location.containers}}": [
+      {
+        "operationId": "272af176-5dbc-48bd-87dd-05dd5e33ffde",
+        "operationName": "fnr_0048",
+        "value": {
+          "containerFrom": "{{.}}"
+        }
+      },
+      {
+        "{{foreach .slots}}": [
+          {
+            "operationId": "79883eff-cabb-4dcd-91ca-ee0bbe3d6993",
+            "operationName": "fnr_0050",
+            "value": {
+              "picture": "{{.picture}}",
+              "slotId": "{{.slotId}}",
+              "slotName": "{{.slotName}}"
+            }
+          },
+          {
+            "{{if '.item[0].typeCode' == 'B'}}": {
+              "operationId": "61fd5fae-2f80-4c71-b97a-072917e5a3ac",
+              "operationName": "fnr_0122",
+              "value": {
+                "item": "{{.item}}"
+              }
+            },
+            "{{elseif '.item.typeCode' == 'C'}}": {
+              "operationId": "4c4b75fb-c432-4590-9284-06b767867051",
+              "operationName": "fnr_0110",
+              "value": {
+                "item": {
+                  "id": "{{.item.id}}",
+                  "number": "{{.item.number}}",
+                  "description": "{{.item.description}}",
+                  "quantity": "{{.item.quantity}}"
+                }
+              }
+            },
+            "{{else}}": {
+              "operationId": "c6053305-dc68-4eed-8348-f4ab3566ff17",
+              "operationName": "fnr_empty"
+            }
+          },
+          {
+            "operationId": "377f72cf-56a6-49d5-bc8a-50d243fa7e22",
+            "operationName": "fnr_0111",
+            "value": {
+              "containerTo": {
+                "slotId": "{{.slotId}}",
+                "picture": "{{.picture}}",
+                "slotName": "{{.slotName}}"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "operationId": "38b3c7d0-afca-4395-ba77-2ddb0272152b",
+        "operationName": "fnr_0114",
+        "value": {
+          "container": "{{.}}"
+        }
+      }
+    ]
+  }
+]

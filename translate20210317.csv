@@ -1,0 +1,192 @@
+﻿ru;en;it
+Войти;Log in;Accedere
+Для отображения перечня задач необходимо авторизоваться в системе;Log in the system to see the list of tasks;Accedere al sistema per vedere la lista di compiti
+Принять;Accept ;Accettare
+ТС;Vehicle;Veicolo
+Выполните разгрузку ТС;Unload the vehicle;Eseguire lo scarico del veicolo
+Тип упаковки;Packing type;Tipo di imballo
+Количество ;Quantity;Quantità
+Вес;Weight;Peso 
+Общий вес;Total weight;Peso totale
+ДОК;Dock;Dock
+Штучное грузовое место;Single cargo item;Collo singolo
+Паллетизированное грузовое место;Pallet load;Collo-pallet
+кг;kg;Kg
+Далее;Next;Avanti
+Назад;Back;Indietro
+Проверьте номер транспортного средства;Check the vehicle number;Controllare il numero di targa del veicolo
+Номер транспортного средства;Vehicle number;Numero di targa del veicolo
+Номер ТС не читается;Vehicle number cannot be read;Il numero di targa del veicolo non si legge
+ТС отсутствует в доке;The vehicle is not in the dock;Il veicolo non è in dock
+Оцените состояние и положение грузовых мест внутри ТС;Assess the condition and position of the cargo items inside the vehicle;Valutare la condizione e la posizione dei colli all'interno del veicolo
+Для перемещения грузовых мест воспользуйтесь дополнительным ресурсом;Use additional resource to move the cargo items;Usare le risorse aggiuntive per spostare colli
+Дополнительный ресурс;Additional resource;Risorse aggiuntive
+Место хранения;Storage location;Luogo di deposito
+Тележка;Trolley;Carrello
+Склад;Warehouse;Magazzino
+Разместите груз на временном месте хранения;Place the cargo in a temporary storage location;Posizionare il carico nel luogo di deposito temporaneo
+Распечатайте штрих-код грузового места;Print the bar code of the cargo item;Stampare il codice a barre del collo
+Подтвердите размещение;Confirm placement;Confermare il posizionamento
+Отсканируйте ID грузового места;Scan the cargo ID;Scansionare ID del collo
+Отсканируйте ID места хранения;Scan the storage location ID;Scansionare ID del luogo di deposito
+Все грузовые места выгружены из ТС и размещены на местах временного хранения;All cargo items are unloaded from the vehicle and placed at their temporary storage locations;Tutti i colli sono stati scaricati dal veicolo e posizionati nei luoghi di deposito
+Введите количество поступивших грузовых мест;Enter the number of received cargo items ;Immettere il numero di colli ricevuti
+Верните дополнительный ресурс на место хранения;Return the additional resource back to the storage location;Far tornare le risorse aggiuntive al luogo di deposito
+Уточните у водителя ТС наличие документов на грузовые места;Find out from the vehicle driver if there are any cargo documents;Chiedere all'autista del veicolo se ci sono i documenti per i colli
+Документы от водителя получены;The driver provided the documents;L'autista ha fornito i documenti
+Прикрепите документы к грузовому месту;Attach the documents to the cargo item;Attaccare i documenti al collo
+Отправка …;Sending…;Invio
+Задачи выполнены!;Tasks are complete!;I compiti sono stati completati!
+Готово;Done;Fatto
+Выход;Exit;Uscita
+Введите несоответствие;Describe the non-compliance;Inserire la non conformità
+Закрыть;Close;Chiuedere
+Обновить;Update;Aggiornare
+Не найдено ни одного медиа-трека указанного типа, удовлетворяющего заданным ограничениям;No media track of the specified type meeting the specified limitations was found;Non è stato trovato nessun media track del tipo indicato che soddisfa i requisiti specificati
+Наведите камеру на QR Code;Point the camera at the QR Code;Puntare la telecamera sul codice QR
+Номер ТС не соответствует;Invalid vehicle number;Il numero di targa del veicolo non è conforme
+Номер ТС не соответствует указанному в задаче;Vehicle number does not correspond to the one specified in the task;Il numero di targa del veicolo non è conforme a quello indicato nel compito
+Не соответствует;Non-compliance;Non conforme
+Отрицательный результат визуального осмотра положения и состояния грузовых мест в ТС;Non-satisfactory result of visual inspection of the position and condition of cargo items in the vehicle;Esito negativo del controllo visivo della posizione e della condizione dei colli nel veicolo
+При визуальном осмотре положения или состояния грузовых мест в ТС выявлены нарушения инструкции;Visual inspection of the position or condition of cargo items in the vehicle revealed violations of the instructions;Al controllo visivo della posizione e della condizione dei colli nel veicolo è stata rivelata la violazione delle istruzioni
+Груз имеет незначительные повреждения;The cargo is slightly damaged;Il carico è leggermente danneggiato
+Груз имеет значительные повреждения;The cargo has significant damage;Il carico è significativamente danneggiato
+Введите несоответствие;Describe the non-compliance;Inserire la non conformità
+Дополнительный ресурс отсутствует в месте хранения;No additional resource is available in the storage location;Le risorse aggiuntive sono assenti nel luogo di deposito
+Не возможно разместить груз на временном месте хранения;It is not possible to place the cargo in a temporary storage area;E' impossibile posizionare il carico nel luogo di deposito temporaneo
+Временное место хранения занято;Temporary storage location is occupied;Il luogo di deposito è occupato
+Груз не может быть размещен на временном месте хранения (превышение габаритов);The cargo cannot be placed in a temporary storage location (oversize).;Il carico non può essere posizionato nel luogo di deposito temporaneo (dimensioni eccessive)
+Отсканированное ID Грузового места не соответствует указанному в задаче;Scanned cargo item ID does not match the one specified in the task;ID scansionato del collo non è conforme a quello indicato nel compito
+Грузовое место отсутствует в указанном временном месте хранения;No cargo area is found in designated temporary storage location;Il collo è assente nel luogo di deposito temporaneo indicato
+Другое;Other;Altro
+При визуальном осмотре состояния грузовых мест размещенных на временное место хранения выявлены нарушения инструкции;Visual inspection of the position or condition of cargo items in the vehicle revealed violations of the instructions;Al controllo visivo della condizione dei colli posizionati nel luogo di deposito temporaneo è stata rivelata la violazione delle istruzioni
+Количество грузовых мест больше планируемого;The number of cargo items exceeds the planned number;Il numnero di colli è minore a quello pianificato
+Дополнительный ресурс неисправен;Additional resource is invalid;Le risorse aggiuntive sono guaste
+Тара не поступила / отсутствует;Тара не поступила / отсутствует;L'imballaggio non è arrivato/non conforme
+Тара повреждена;Тара повреждена;L'imballaggio è danneggiato
+ID Тары не считывается  ;ID Тары не считывается  ;ID dell'imballaggio non si legge
+ID Тары поврежден;ID Тары поврежден;ID dell'imballaggio è danneggiato
+ID Тары отсутствует;ID Тары отсутствует;ID dell'imballaggio è assente
+Органайзер не поступил / отсутствует;Органайзер не поступил / отсутствует;Il delimitatore non è arrivato/assente
+Органайзер поврежден;Органайзер поврежден;Il delimitatore non è danneggiato
+ID Органайзера / ID Ячейки не считывается ;ID Органайзера / ID Ячейки не считывается ;ID del delimitatore / ID della divisione non si legge
+ID Органайзера / ID Ячейки поврежден;ID Органайзера / ID Ячейки поврежден;ID del delimitatore / ID  della divisione è danneggiato
+ID Органайзера / ID Ячейки отсутствует;ID Органайзера / ID Ячейки отсутствует;ID del delimitatore / ID della divisione è assente
+ТМЦ отсутствуют ;ТМЦ отсутствуют ;I beni sono assenti
+ID ТМЦ / ID Партии ТМЦ не считывается;ID ТМЦ / ID Партии ТМЦ не считывается;ID dei beni / ID del lotto dei beni non si legge
+ID ТМЦ / ID Партии ТМЦ поврежден;ID ТМЦ / ID Партии ТМЦ поврежден;ID dei beni / ID  del lotto dei beni è danneggiato
+ID ТМЦ / Партии ТМЦ  отсутствует;ID ТМЦ / Партии ТМЦ  отсутствует;ID dei beni / ID del lotto dei beni è assente
+Место временного хранения / Место хранения занято;Место временного хранения / Место хранения занято;Il luogo di deposito temporaneo/luogo di deposito è occupato
+Место временного хранения / Место хранения не соответствуют размерам Грузового места / Тары / ТМЦ;Место временного хранения / Место хранения не соответствуют размерам Грузового места / Тары / ТМЦ;Il luogo di deposito temporaneo/luogo di deposito non è conforme alle dimensioni del collo/ dell'imballaggio/dei beni
+ID Места временного хранения / Места хранения не считывается;ID Места временного хранения / Места хранения не считывается;ID del luogo di deposito temporaneo/luogo di deposito non si legge
+ID Места временного хранения / Места хранения поврежден;ID Места временного хранения / Места хранения поврежден;ID del luogo di deposito temporaneo/luogo di deposito è danneggiato
+ID Места временного хранения / Места хранения отсутствует;ID Места временного хранения / Места хранения отсутствует;ID del luogo di deposito temporaneo/luogo di deposito è assente
+Тара с ТМЦ перевернулась и ТМЦ перепутались;Тара с ТМЦ перевернулась и ТМЦ перепутались;L'imballaggio con i beni si è rovesciato e i beni si sono mescolati
+УП не запускается;УП не запускается;Il programma di gestione non si avvia
+Ошибочный ТМЦ (оснастка, инструмент и т.д.);Ошибочный ТМЦ (оснастка, инструмент и т.д.);Beni sbagliati (attrezzature, strumenti ecc)
+Возникла NotReadableError некоторая проблема, которая помешала использованию устройства;Возникла NotReadableError некоторая проблема, которая помешала использованию устройства;E' apparso un certo problema NotReadableError, che ha impedito di usare il dispositivo
+Ошибка получения потока;Ошибка получения потока;Errore di ricevimento di flusso
+Загрузка медиа данных приостановлена;Загрузка медиа данных приостановлена;Il caricamento dei dati media è sospeso
+Страница была загружена с использованием HTTP, а не HTTPS или пользователь указал, что текущему экземпляру просмотра не разрешен доступ к устройств;Страница была загружена с использованием HTTP, а не HTTPS или пользователь указал, что текущему экземпляру просмотра не разрешен доступ к устройств;La pagina è stata caricata HTTP, ma non HTTPS oppure l'utente ha indicato che al presente esemplare di visualizzazione non è stato permesso l'accesso al dispositivo
+Произошла аппаратная ошибка на уровне операционной системы, браузера или веб-страницы, которая препятствовала доступу к устройству;Произошла аппаратная ошибка на уровне операционной системы, браузера или веб-страницы, которая препятствовала доступу к устройству;E' successo un errore hardware a livello del sistema operativo, browser oppure pagina web che ha impedito di accedere al dispositivo 
+Не удалось найти устройства, отвечающих запрошенным критериям поиска;Не удалось найти устройства, отвечающих запрошенным критериям поиска;Non si è riusciti a trovare i dispositivi rispondenti ai richiesti criteri di ricerca 
+Поддержка медиа пользователя отключена;Поддержка медиа пользователя отключена;Il supporto media dell'utente è disattivato 
+Список ограничений пуст или для всех ограничений установлено значение false;Список ограничений пуст или для всех ограничений установлено значение false;L'elenco di restrizioni è vuoto oppure per tutte le restrizioni è impostato il valore false
+Не удалось получить изображение из массива по индексу;Не удалось получить изображение из массива по индексу;Non si è riusciti a ottenere l'immagine dal massiccio per indice
+Нет данных для отображения;Нет данных для отображения;Non ci sono dati per la visualizzazione
+Ошибка загрузки тела изображения;Ошибка загрузки тела изображения;Errore di caricamento тела изображения
+Удалить;Удалить;Rimuovere
+Нет данных для отображения;Нет данных для отображения;Non ci sono dati per la visualizzazione
+Неверное имя пользователя или пароль, или превышено количество допустимых попыток;Неверное имя пользователя или пароль, или превышено количество допустимых попыток;Il nome dell'utente o il password  sono errati, oppure il numero di tentativi disponibili è stato superato 
+Адрес /connect/token недоступен из-за недоверенного сертификата или по другой причине;Адрес /connect/token недоступен из-за недоверенного сертификата или по другой причине;Адрес /connect/token недоступен из-за недоверенного сертификата или по другой причине
+Имя пользователя;Username;Nome utente
+Выйти;Log Out;Log Out
+Пароль;Password;Password
+Загрузка;Loading;Caricamento
+Ознакомьтесь с информацией для проведения документарного и количественного контроля;Read the information for documentary and quantitative controls;Prendi visione dell'informazione per svolgere il controllo documentario e quantitativo
+Груз;The cargo;Il carico
+Кол-во;Quantity;Quantità
+Место проведения контроля;Место проведения контроля;Luogo di svolgimento del controllo
+Подготовьте дополнительный ресурс для перемещения ТМЦ;Подготовьте дополнительный ресурс для перемещения ТМЦ;Prepara la risorsa aggiuntiva per spostare il bene
+Подготовьте тару и переместите ее в место проведения контроля;Подготовьте тару и переместите ее в место проведения контроля;Prepara l'imballo e spostalo nel luogo di svolgimento del controllo 
+Тара;Тара;L'imballaggio
+Переместите груз для проведения контроля;Переместите груз для проведения контроля;Sposta il carico  per svolgere il controllo
+Распакуйте и проверьте состав груза на наличие документов;Распакуйте и проверьте состав груза на наличие документов;Disimballa e controlla la presenza dei documenti nella composizione del carico
+Упаковка;Упаковка;Imballo
+Упаковка содержит бумажные документы;Упаковка содержит бумажные документы;L'imballo contiene i documenti cartacei
+Заполните информацию о гарантии;Заполните информацию о гарантии;Inserisci l'informazione sulla garanzia
+ТМЦ;ТМЦ;Beni
+ЕИ;ЕИ;UM
+Ячейка;Ячейка;Divisore
+Укажите информацию о гарантии;Укажите информацию о гарантии;Indica l'informazione sulla garanzia
+Дата окончания гарантии;Дата окончания гарантии;Scadenza della garanzia
+Количество месяцев гарантии;Количество месяцев гарантии;Numero di mesi della garanzia
+Число месяцев;Число месяцев;Numero di mesi
+от даты;от даты;dalla data
+Иные условия гарантии;Иные условия гарантии;altre condizioni della garanzia
+Серийный номер;Серийный номер;Numero di serie
+Наименование;Наименование;Denominazione
+Выберите ТМЦ;Выберите ТМЦ;Scegli il bene
+Подтвердите проведение документарного и количественного контроля для всех ТМЦ;Подтвердите проведение документарного и количественного контроля для всех ТМЦ;Conferma lo svolgimento del controllo documentario e quantitativo per tutti i beni
+Разместите тару с ТМЦ на месте хранения;Разместите тару с ТМЦ на месте хранения;Colloca l'imballo con il bene nel luogo di deposito
+Подтвердите место хранения;Подтвердите место хранения;Conferma il luogo di deposito
+Отсканируйте идентификатор тары;Отсканируйте идентификатор тары;Scansiona l'identificatore dell'imballo
+Отсканируйте идентификатор места хранения;Отсканируйте идентификатор места хранения;Scansiona l'identificatore del luogo di deposito
+Распечатайте штрихкод ТМЦ, разместите ТМЦ в таре;Распечатайте штрихкод ТМЦ, разместите ТМЦ в таре;Srampa il codice a barre del bene, colloca il bene nell'imballo
+Отсканируйте ячейку в таре;Отсканируйте ячейку в таре;Scansiona il divisore nell'imballo
+Отсканируйте идентификатор ТМЦ;Отсканируйте идентификатор ТМЦ;Scansiona l'identificatore del bene
+Укажите фактическое количество размещенное в таре;Укажите фактическое количество размещенное в таре;Indica la quantità effettiva collocata nell'imballo
+Процесс завершен;Process completed;Processo completato
+Нештатная ситуация;Emergency situation;Situazione di emergenza
+Уточните у водителя ТС наличие документов на грузовые места;Уточните у водителя ТС наличие документов на грузовые места;Chiedere all'autista del veicolo se ha i documenti per i colli
+Отсканируйте ID грузового места;Scan the cargo ID;Scansionare ID del collo
+Номер ТС не соответствует;Номер ТС не соответствует;Il numero del veicolo non è conforme
+Выполните разгрузку ТС;Выполните разгрузку ТС;Eseguire lo scaricamento del veicolo
+Оцените состояние и положение грузовых мест внутри ТС;Оцените состояние и положение грузовых мест внутри ТС;Valutare lo stato e la posizione dei colli all'interno del veicolo
+Вес, кг;Вес, кг;Peso, kg
+Разместите бумажные документы в месте хранения документации на рабочем месте;Разместите бумажные документы в месте хранения документации на рабочем месте;Collocare i documenti cartacei nel luogo di deposito dei documenti nella postazione di lavoro
+Количество;Quantity;Quantità
+Заполните информацию о гарантии, серийном номере, сроке хранения;Заполните информацию о гарантии, серийном номере, сроке хранения;Inserire l'informazione sulla garanzia, numero di serie, termine di conservazione
+Все ТМЦ из вскрытой упаковки проверены;Все ТМЦ из вскрытой упаковки проверены;Tutti i beni dall'imballaggio aperto sono stati controllati
+Все грузовые места выгружены из ТС и размещены на местах временного хранения;Все грузовые места выгружены из ТС и размещены на местах временного хранения;Tutti i colli sono scaricati dal veicolo e collocati  nei luoghi di deposito temporaneo
+Паллетизированное грузовое место, шт;Паллетизированное грузовое место, шт;Collo pallettizzato, unità
+Штучное грузовое место, шт;Штучное грузовое место, шт;Collo singolo, unità
+"Все ТМЦ размещены в таре. Подтвердите выполнение задачи \""Документарный и количественный контроль\""";"Все ТМЦ размещены в таре. Подтвердите выполнение задачи \""Документарный и количественный контроль\""";"Tutti i beni sono collocati nei contenitori. Confermare l'esecuzione dei compiti \""Controllo documentario e quantitativo\"""
+Подготовьте инструмент для проведения входного контроля;Подготовьте инструмент для проведения входного контроля;Preparare gli strumenti per il controllo in entrata 
+Доп. ресурс;Доп. ресурс;Risorsa agg.
+Место отбора образцов;Место отбора образцов;Luogo di selezione dei campioni
+Отсканируйте ID тары;Отсканируйте ID тары;Scansiona ID dell'imballaggio
+Отсканируйте ID ячейки;Отсканируйте ID ячейки;Scansiona ID nell'imballo
+Ознакомьтесь с задачей для проведения входного контроля;Ознакомьтесь с задачей для проведения входного контроля;Prendi visione dell'informazione per svolgere il controllo in entrata
+ID тары;ID тары;ID dell'imballaggio
+ID ячейки;ID ячейки;ID nell'imballo
+ID ТМЦ;ID ТМЦ;ID dei beni
+Разместите образцы в таре;Разместите образцы в таре;Colloca il bene nell'imballo
+Распечатайте и наклейте  идентификатор ТМЦ, разместите ТМЦ в ячейке;Распечатайте и наклейте  идентификатор ТМЦ, разместите ТМЦ в ячейке;Srampa il codice a barre del bene, colloca il bene nell'imballo
+Отсканируйте ID ТМЦ;Отсканируйте ID ТМЦ;Scansiona ID del bene
+Распечатайте этикетку и разместите ТМЦ в отдельном месте;Распечатайте этикетку и разместите ТМЦ в отдельном месте;Srampa il codice a barre del bene, colloca il bene nell'imballo
+Переместите тару с ТМЦ для проведения входного контроля;Переместите тару с ТМЦ для проведения входного контроля;Sposta  l'imballaggio per il controllo in entrata 
+Результат проведения контроля;Результат проведения контроля;Risultati della verifica
+Рекомендация;Рекомендация;Raccomandazione
+Брак;Брак;Scartati
+Введите значение;Enter value;Immettere il valore
+Инструмент;Tool;Strumento
+Инструкция;Instruction;Istruzione
+Номер;Number;Numero
+Отсканирован неверный ID ;Incorrect ID scanned;Scansione ID errata
+Отсканирован неверный ID места хранения;Incorrect the storage location ID scanned;Scansione ID del luogo di deposito errata
+Отсканирован неверный ID грузового места;Incorrect the cargo ID scanned;Scansione ID del collo errata
+Отсканирован неверный ID ТМЦ;Incorrect inventory item ID scanned;Scansione ID dei beni errata
+Отсканирован неверный ID тары;Incorrect container ID scanned;Scansione ID dell'imballaggio errata
+Отсканирован неверный ID ячейки;Incorrect cell ID scanned;Scansione ID nell'imballo errata
+Подготовьте тару и переместите ее в место отбора образцов;Подготовьте тару и переместите ее в место отбора образцов;Prepara l'imballo e spostalo nel luogo di selezione dei campioni
+Компоненты;Компоненты;Componenti
+Изображение;Image;Immagine
+Инструменты;Tools;Strumenti
+Описание перехода и контролируемые параметры;Описание перехода и контролируемые параметры;Descrizione del passaggio e parametri da controllare
+Контролируемый параметр;Контролируемый параметр;Parametro da controllare
+Значение;Значение;Valore
+Контролируемые параметры, инструмент и ввод фактических значений;Контролируемые параметры, инструмент и ввод фактических значений;Parametri da controllare, strumenti e immissione dei valori effettivi
+Контроль времени выполнения операции;Контроль времени выполнения операции;Controllo del tempo di esecuzione dell’operazione
+Наименование перехода;Наименование перехода;Denominazione del passaggio
+ID места хранения;The storage location ID;ID del luogo di deposito

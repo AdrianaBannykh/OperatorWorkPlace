@@ -1,0 +1,75 @@
+{
+  "value": {
+    "containerFrom": {
+      "id": "TS12345A",
+      "locationName": "РМ комплектования",
+      "place": "Стеллаж С8-2-4",
+      "placement": "M149",
+      "number": "M149-B001",
+      "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+    },
+    "containerTo": {
+      "id": "TS00033A",
+      "locationName": "РМ комплектования",
+      "place": "Стеллаж С8-2-42",
+      "placement": "M150",
+      "number": "M150-B001",
+      "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+    },
+    "placements": [
+      {
+        "containerFrom": {
+          "id": "TS12345A",
+          "slotId": "2326dab3-79ff-4a88-aeb3-7fb6ff66fb3d",
+          "slotName": "Cell-1-1",
+          "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+        },
+        "containerTo": {
+          "id": "TS00033A",
+          "slotId": "d2e0a57b-1945-4234-93f4-412f3f235a8e",
+          "slotName": "Cell-2-2",
+          "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+        },
+        "item": [
+          {
+            "id": "89d92c0b-dbfe-4430-9a20-cdf97744755e",
+            "number": "00012453",
+            "description": "Датчик ISO 20458",
+            "typeCode": "B",
+            "quantity": "1",
+            "serialNumber": "XXX666"
+          },
+          {
+            "id": "3f38d4e8-3293-4657-82c0-20ba28688118",
+            "number": "00012453",
+            "description": "Датчик ISO 20458",
+            "typeCode": "B",
+            "quantity": "1",
+            "serialNumber": "XXX667"
+          }
+        ]
+      },
+      {
+        "containerFrom": {
+          "id": "TS12345A",
+          "slotId": "4147602b-3581-41d2-a2bb-07043b5142ef",
+          "slotName": "Cell-3-3",
+          "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+        },
+        "containerTo": {
+          "id": "TS00033A",
+          "slotId": "d2e0a57b-1945-4234-93f4-412f3f235a8e",
+          "slotName": "Cell-4-4",
+          "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+        },
+        "item": {
+          "id": "222",
+          "number": "00012453",
+          "description": "Датчик ISO 20458222",
+          "typeCode": "C",
+          "quantity": "8"
+        }
+      }
+    ]
+  }
+}

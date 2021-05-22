@@ -1,0 +1,57 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "d3587156-ff12-4d8f-bf33-af0a74a8e267",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "title": "Найдите ТМЦ в соответствии с изображением ниже",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ItemPicture",
+                  "url": "{{.value.slot.item.picture}}"
+                }
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Подготовьте к размещению ТМЦ в количестве, указанном ниже:",
+                "table": [
+                  [
+                    "Количество",
+                    "ЕИ"
+                  ],
+                  [
+                    "{{.value.slot.item.quantity}}",
+                    "{{.value.slot.item.unitOfMeasurement}}"
+                  ]
+                ]
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

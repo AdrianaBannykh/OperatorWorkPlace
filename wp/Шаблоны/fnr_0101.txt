@@ -1,0 +1,57 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "36d8e74d-c499-4b7e-8ec0-8c7266d14e6d",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "title": "Примерный внешний вид ТМЦ",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ItemPicture",
+                  "url": "{{.value.slot.item.picture}}"
+                }
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Извлеките ТМЦ из тары в количестве:",
+                "table": [
+                  [
+                    "Количество",
+                    "ЕИ"
+                  ],
+                  [
+                    "{{.value.slot.item.quantity}}",
+                    "{{.value.slot.item.unitOfMeasurement}}"
+                  ]
+                ]
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

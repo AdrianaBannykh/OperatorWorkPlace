@@ -1,0 +1,56 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "{{$table}}": {
+    "key": "number",
+    "header": [
+      "Код ТМЦ/Услуги",
+      "ТМЦ/Услуга",
+      "Количество требуемое",
+      "Требуемая дата",
+      "Основание",
+      "Требования ПВК",
+      "Количество требуемых ТКП",
+      "Количество подготовленных запросов ТКП",
+      "Количество отправленных запросов ТКП",
+      "Условия доставки, последняя закупка"
+    ],
+    "fields": [
+      "number",
+      "name",
+      "quantityRequired",
+      "dateRequired",
+      "reason",
+      "requirement",
+      "quantityRequiredProposal",
+      "quantityPreparedQueriesProposal",
+      "quantitySentQueriesProposal",
+      "deliveryTerms"
+    ]
+  },
+  "componentId": "34c322ae-4577-4e62-8c89-156078bb0fd0",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "name": "List",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "title": "Получить ТКП на ТМЦ/Услугу",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Пройдите к указанному месту хранения и отсканируйте штрихкод идентификатора тары с ТМЦ",
+                "allowRowSelection": true,
+                "radio": false,
+                "table": "{{$table .value.tasks}}"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

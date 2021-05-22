@@ -1,0 +1,85 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "63ae48ba-538d-4c1c-88dd-038285e3f3be",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "title": "Найдите ячейку в соответствии с указаниями ниже и подтвердите, отсканировав ID ячейки",
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "Наименование ячейки"
+                  ],
+                  [
+                    "{{.value.slotName}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ContainerForInventorysation",
+                  "url": "{{.value.picture}}"
+                }
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "ID ячейки"
+                  ],
+                  [
+                    "{{.value.slotId}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "title": "Отсканируйте идентификатор ячейки",
+              "input": {
+                "binding": {
+                  "id": "{{.value.slotId}}",
+                  "type": "containerFrom",
+                  "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.slotId}}$",
+                  "message": "Отсканирован неверный ID ячейки"
+                },
+                "placeholder": "Отсканируйте ID ячейки",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

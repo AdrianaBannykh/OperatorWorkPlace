@@ -1,0 +1,85 @@
+[
+  {
+    "operationId": "46042fcc-3f38-4e4b-8220-020c2585c269",
+    "operationName": "fnr_0108",
+    "value": {
+      "containerIdFrom": "{{.value.containerFrom.id}}",
+      "locationFrom": "{{.value.containerFrom.locationName}}",
+      "picture": "{{.value.containerFrom.picture}}",
+      "containerIdTo": "{{.value.containerTo.id}}",
+      "locationTo": "{{.value.containerTo.locationName}}"
+    }
+  },
+  {
+    "operationId": "272af176-5dbc-48bd-87dd-05dd5e33ffde",
+    "operationName": "fnr_0048",
+    "value": {
+      "containerFrom": "{{.value.containerFrom}}"
+    }
+  },
+  {
+    "operationId": "d1382fbd-552a-46fb-9f1c-824ba789eb26",
+    "operationName": "fnr_0109",
+    "value": {
+      "containerTo": "{{.value.containerTo}}"
+    }
+  },
+  {
+    "{{foreach .value.placements}}": [
+      {
+        "operationId": "79883eff-cabb-4dcd-91ca-ee0bbe3d6993",
+        "operationName": "fnr_0050",
+        "value": {
+          "picture": "{{.containerFrom.picture}}",
+          "slotId": "{{.containerFrom.slotId}}"
+        }
+      },
+      {
+        "{{if '.item.serialNumber' == ''}}": {
+          "operationId": "4c4b75fb-c432-4590-9284-06b767867051",
+          "operationName": "fnr_0110",
+          "value": {
+            "item": {
+              "id": "{{.item.id}}",
+              "number": "{{.item.number}}",
+              "description": "{{.item.description}}",
+              "quantity": "{{.item.quantity}}"
+            }
+          }
+        },
+        "{{else}}": {
+          "operationId": "61fd5fae-2f80-4c71-b97a-072917e5a3ac",
+          "operationName": "fnr_0122",
+          "value": {
+            "item": {
+              "id": "{{.item.id}}",
+              "number": "{{.item.number}}",
+              "description": "{{.item.description}}",
+              "quantity": "{{.item.quantity}}",
+              "serialNumber": "{{.item.serialNumber}}"
+            }
+          }
+        }
+      },
+      {
+        "operationId": "87a3e1cb-1d08-40dd-81eb-924468395eae",
+        "operationName": "fnr_0112",
+        "value": {
+          "containerTo": {
+            "id": "{{.containerTo.id}}"
+          }
+        }
+      },
+      {
+        "operationId": "377f72cf-56a6-49d5-bc8a-50d243fa7e22",
+        "operationName": "fnr_0111",
+        "value": {
+          "containerTo": {
+            "slotId": "{{.containerTo.slotId}}",
+            "picture": "{{.containerTo.picture}}"
+          }
+        }
+      }
+    ]
+  }
+]

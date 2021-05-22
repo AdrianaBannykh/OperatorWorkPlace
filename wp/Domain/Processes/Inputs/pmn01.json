@@ -1,0 +1,71 @@
+{
+  "value": {
+    "tasks": [
+      {
+        "number": "0123456",
+        "name":"Наименование",
+        "quantityRequired": "230",
+        "dateRequired": "2020.03.01",
+        "reason": "Обновление ТКП",
+        "requirement": "Упаковка",
+        "quantityRequiredProposal": "3",
+        "quantityPreparedQueriesProposal": "1",
+        "quantitySentQueriesProposal": "1",
+        "deliveryTerms": "Доставка"
+    },
+    {
+      "number": "0123457",
+      "name":"Наименование 2",
+      "quantityRequired": "250",
+      "dateRequired": "2020.05.01",
+      "reason": "Потребность",
+      "requirement": "Упаковка",
+      "quantityRequiredProposal": "3",
+      "quantityPreparedQueriesProposal": "0",
+      "quantitySentQueriesProposal": "2",
+      "deliveryTerms": "Самовывоз"
+  },
+  {
+    "number": "0123458",
+    "name":"Наименование 3",
+    "quantityRequired": "250",
+    "dateRequired": "2020.05.01",
+    "reason": "Потребность",
+    "requirement": "Упаковка",
+    "quantityRequiredProposal": "3",
+    "quantityPreparedQueriesProposal": "2",
+    "quantitySentQueriesProposal": "0",
+    "deliveryTerms": "Не закупалось"
+  }
+
+  ],
+  "suppliers": [
+    {
+    "id": "1",
+    "firstName":"John",
+    "lastName":"Ivanov",
+    "midleName": "Ivanovich",
+    "telephone": "+7(921)-000-00-00",
+    "email":"ivanov_ii@dakont.ru",
+    "isActive": true,
+    "isMain": true,
+    "inn": "250",
+    "address": "Saint-Petersburg"
+  },
+  {
+    "id": "2",
+    "firstName":"Ann",
+    "lastName":"Petrova",
+    "midleName":"Ivanovna",
+    "telephone": "+7(921)-000-00-01",
+    "email": "petrovich_pp@dakont.ru",
+    "isActive": true,
+    "isMain": true,
+    "inn": "251",
+    "address": "Moscow"
+  }
+]
+  }
+}
+
+

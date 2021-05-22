@@ -1,0 +1,69 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "title": "Размещение скомплектованных ТМЦ",
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Определите положение ячейки в таре по обозначению и изображению",
+                "table": [
+                  [
+                    "Обозначение ячейки"
+                  ],
+                  [
+                    "{{.value.slotTo.slotId}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "SlotTo",
+                  "url": "{{.value.slotTo.picture}}"
+                }
+              }
+            },
+            {
+              "name": "InputData",
+              "title": "Отсканируйте идентификатор ячейки",
+              "input": {
+                "binding": {
+                  "id": "{{.value.slotTo.slotId}}",
+                  "type": "slotTo",
+                  "field": "factId"
+                },
+                "placeholder": "Обозначение идентификатора",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

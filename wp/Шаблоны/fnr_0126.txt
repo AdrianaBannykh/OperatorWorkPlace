@@ -1,0 +1,203 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "ce086e2a-11e6-4586-8881-174be3bfa49f",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "name": "List",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Выберите контактное лицо поставщика"
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "title": "Полное наименование"
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "title": "Краткое наименование"
+              }
+            },
+            {
+              "name": "DataTable",
+              "input": {
+                "title": "Список контактов",
+                "binding": {
+                  "type": "suppliers"
+                },
+                "columns": [
+                  {
+                    "header": "#",
+                    "component": {
+                      "name": "InputData",
+                      "input": {
+                        "binding": {
+                          "field": "#count"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "Имя",
+                    "component": {
+                      "name": "InputData",
+                      "input": {
+                        "binding": {
+                          "field": "firstName"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "Фамилия",
+                    "component": {
+                      "name": "InputData",
+                      "input": {
+                        "binding": {
+                          "field": "lastName"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "Отчество",
+                    "component": {
+                      "name": "InputData",
+                      "input": {
+                        "binding": {
+                          "field": "midleName"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "Телефон",
+                    "component": {
+                      "name": "InputData",
+                      "input": {
+                        "binding": {
+                          "field": "telephone"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "E-mail",
+                    "component": {
+                      "name": "InputData",
+                      "input": {
+                        "binding": {
+                          "field": "email"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "Активный",
+                    "component": {
+                      "name": "CheckBox",
+                      "input": {
+                        "binding": {
+                          "field": "isActive"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "header": "Основной",
+                    "component": {
+                      "name": "CheckBox",
+                      "input": {
+                        "binding": {
+                          "field": "isMain"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "edit": {
+                  "components": [
+                    {
+                      "name": "InputData",
+                      "input": {
+                        "title": "Имя",
+                        "binding": {
+                          "field": "firstName"
+                        }
+                      }
+                    },
+                    {
+                      "name": "InputData",
+                      "input": {
+                        "title": "Фамилия",
+                        "binding": {
+                          "field": "lastName"
+                        }
+                      }
+                    },
+                    {
+                      "name": "InputData",
+                      "input": {
+                        "title": "Отчество",
+                        "binding": {
+                          "field": "midleName"
+                        }
+                      }
+                    },
+                    {
+                      "name": "InputData",
+                      "input": {
+                        "title": "Телефон",
+                        "binding": {
+                          "field": "telephone"
+                        }
+                      }
+                    },
+                    {
+                      "name": "InputData",
+                      "input": {
+                        "title": "E-mail",
+                        "binding": {
+                          "field": "email"
+                        }
+                      }
+                    },
+                    {
+                      "name": "CheckBox",
+                      "input": {
+                        "title": "Активный",
+                        "binding": {
+                          "field": "isActive"
+                        }
+                      }
+                    },
+                    {
+                      "name": "CheckBox",
+                      "input": {
+                        "title": "Основной",
+                        "binding": {
+                          "field": "isMain"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

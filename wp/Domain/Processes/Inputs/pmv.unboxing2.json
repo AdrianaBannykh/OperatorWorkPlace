@@ -1,0 +1,44 @@
+
+  {
+  "value": {
+    "container": {
+      "id": "T0000123",
+      "slots": [
+        {
+          "id": "C1/3",
+          "item": {
+            "id": "111",
+            "number": "00112584",
+		"serialNumber": "00112584",
+            "description": "Уголок",
+            "quantity": "1",
+            "unitOfMeasurement": "шт",
+            "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+          }
+        },
+        {
+          "id": "C2/3",
+          "item": {
+            "id": "222",
+            "number": "00112584222",
+            "description": "Уголок",
+            "quantity": "2",
+            "unitOfMeasurement": "шт",
+            "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+          }
+        },
+        {
+          "id": "C3/3",
+          "item": {
+            "id": "333",
+            "number": "00112584333",
+            "description": "Уголок",
+            "quantity": "3",
+            "unitOfMeasurement": "шт",
+            "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+          }
+        }
+      ]
+    }
+  }
+}

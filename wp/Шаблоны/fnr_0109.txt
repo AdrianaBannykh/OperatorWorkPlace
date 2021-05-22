@@ -1,0 +1,76 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "26ee191a-f818-4c32-9325-5a68e174f75b",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Пройдите к указанному месту хранения и отсканируйте штрихкод идентификатора тары без ТМЦ (пустой)",
+                "table": [
+                  [
+                    "Место хранения",
+                    "Тара"
+                  ],
+                  [
+                    "{{.value.containerTo.place}}",
+                    "{{.value.containerTo.id}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "ContainerToPlace",
+                  "url": "{{.value.containerTo.picture}}"
+                }
+              }
+            },
+            {
+              "name": "InputData",
+              "title": "Подтвердите выбор тары",
+              "input": {
+                "binding": {
+                  "id": "{{.value.location.containerTo.id}}",
+                  "type": "containerFrom",
+                  "field": "factId"
+                },
+                "placeholder": "Отсканируйте идентификатор тары",
+                "scanner": true,
+                "required": true
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Разместите тару на своем рабочем месте. Далее в задаче данная тара называется 'Тара для размещения'"
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

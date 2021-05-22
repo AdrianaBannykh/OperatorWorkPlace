@@ -1,0 +1,41 @@
+{
+  "{{$deviation_title}}": "Emergency situation",
+  "{{$withItem}}": "С ТМЦ",
+  "{{$empty}}": "пустая",
+  "{{$table}}": {
+    "key": "id",
+    "header": [
+      "Расположение",
+      "Обозначение тары"
+    ],
+    "fields": [
+      "$.value.location.name",
+      {
+        "{{if .item}}": "{{.id}} {{$withItem}}",
+        "{{else}}": "{{.id}} {{$empty}}"
+      }
+    ]
+  },
+  "componentId": "eef12da4-b8fe-4dc7-89e5-c518158d5898",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Ознакомьтесь с местонахождением и обозначением тары с ТМЦ и пустой тары. Пройдите к месту выполнения задачи.",
+                "table": "{{$table .value.location.containers}}"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "57b0b292-0b4b-40ad-82c3-81ae0bf9de6e",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Подготовьте ТМЦ к размещению в таре. Определите ТМЦ, указанную в таблице ниже",
+                "table": [
+                  [
+                    "Наименование ТМЦ",
+                    "Обозначение ТМЦ"
+                  ],
+                  [
+                    "{{.value.slot.item.description}}",
+                    "{{.value.slot.item.number}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "title": "Отсканируйте заводской номер ТМЦ",
+              "input": {
+                "binding": {
+                  "id": "{{.value.slot.item.serialNumber}}",
+                  "type": "item",
+                  "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.slot.item.serialNumber}}$",
+                  "message": "Отсканирован неверный заводской номер"
+                },
+                "placeholder": "Заводской номер",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

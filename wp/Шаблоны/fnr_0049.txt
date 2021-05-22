@@ -1,0 +1,42 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "d3007faf-3dd7-46d5-9e22-8a726f89e06e",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Информация об ID ТМЦ и/или их количестве не соответствует плановым или ранее веденным данным."
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Для проведения повторного подсчета ТМЦ, которые только что проходили проверку, нажмите кнопку ДАЛЕЕ "
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

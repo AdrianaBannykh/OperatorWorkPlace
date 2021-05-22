@@ -1,0 +1,45 @@
+﻿{
+  "value": {
+    "container": {
+      "id": "T0000123",
+      "slots": [
+        {
+          "id": "e74d6a21-ef9f-49f1-913d-488115f30b73",
+          "name": "Cell-1-1",
+          "item": {
+            "id": "111",
+            "number": "00112584",
+            "description": "Уголок",
+            "quantity": "1",
+            "unitOfMeasurement": "шт",
+            "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+          }
+        },
+        {
+          "id": "a4ef958f-9491-4b94-ad0d-d98100cdbfbd",
+          "name": "Cell-2-3",
+          "item": {
+            "id": "222",
+            "number": "00112584222",
+            "description": "Уголок",
+            "quantity": "2",
+            "unitOfMeasurement": "шт",
+            "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+          }
+        },
+        {
+          "id": "8b9f6698-ec13-4ccc-9f7b-1acc8e87342f",
+          "name": "Cell-3-3",
+          "item": {
+            "id": "333",
+            "number": "00112584333",
+            "description": "Уголок",
+            "quantity": "3",
+            "unitOfMeasurement": "шт",
+            "picture": "https://iems.diakont.ru:3012/doc/visual.jpg"
+          }
+        }
+      ]
+    }
+  }
+}
