@@ -1,6 +1,6 @@
 {
   "{{$deviation_title}}": "Нештатная ситуация",
-  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentId": "2f8425a6-d3d6-4077-af0b-a3805b3c69dd",
   "componentName": "Layout",
   "input": {
     "variant": "list",
@@ -9,44 +9,53 @@
         "id": "{{$new_id post}}",
         "name": "Post",
         "input": {
-          "title": "Размещение скомплектованных ТМЦ",
           "components": [
             {
               "name": "ParamsTable",
               "input": {
-                "title": "Определите положение ячейки в таре по обозначению и изображению. Отсканируйте ID ячейки. Разместите ТМЦ в ячейке.",
+                "title": "Извлеките из ячейки ТМЦ в указанном ниже количестве",
                 "table": [
                   [
-                    "Обозначение ячейки"
+                    "Обозначение",
+                    "Наименование"
                   ],
                   [
-                    "{{.value.containerTo.slotName}}"
+                    "{{.value.item.number}}",
+                    "{{.value.item.description}}"
                   ]
                 ]
               }
             },
             {
-              "name": "FileViewer",
+              "name": "InputData",
               "input": {
-                "type": "image",
-                "imageSettings": {
-                  "title": "SlotTo",
-                  "url": "{{.value.containerTo.slotPicture}}"
-                }
+                "binding": {
+                  "id": "{{.value.item.id}}",
+                  "type": "containerFrom",
+                  "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.item.id}}$",
+                  "message": "Отсканирован неверный ID ТМЦ"
+                },
+                "placeholder": "Отсканируйте ID ТМЦ",
+                "scanner": true,
+                "required": true
               }
             },
             {
-              "name": "InputData",
-              "title": "Отсканируйте идентификатор ячейки",
+              "name": "ParamsTable",
               "input": {
-                "binding": {
-                  "id": "{{.value.containerTo.slotId}}",
-                  "type": "containerTo",
-                  "field": "factId"
-                },
-                "placeholder": "Отсканируйте ID ячейки",
-                "scanner": true,
-                "required": true
+                "table": [
+                  [
+                    "Количество",
+                    "ЕИ"
+                  ],
+                  [
+                    "{{.value.item.quantity}}",
+                    "{{.value.item.unitOfMeasurement}}"
+                  ]
+                ]
               }
             }
           ],

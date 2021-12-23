@@ -1,6 +1,5 @@
 {
-  "{{$deviation_title}}": "Нештатная ситуация",
-  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentId": "f2312dab-5db7-4076-aa56-1bb186bc6942",
   "componentName": "Layout",
   "input": {
     "variant": "list",
@@ -9,18 +8,17 @@
         "id": "{{$new_id post}}",
         "name": "Post",
         "input": {
-          "title": "Размещение скомплектованных ТМЦ",
           "components": [
             {
               "name": "ParamsTable",
               "input": {
-                "title": "Определите положение ячейки в таре по обозначению и изображению. Отсканируйте ID ячейки. Разместите ТМЦ в ячейке.",
+                "title": "Переместите тару в указанное помещение. После перемещения нажмите кнопку [Далее].",
                 "table": [
                   [
-                    "Обозначение ячейки"
+                    "Номер помещения"
                   ],
                   [
-                    "{{.value.containerTo.slotName}}"
+                    "{{.value.container.locationRoomTo}}"
                   ]
                 ]
               }
@@ -30,23 +28,20 @@
               "input": {
                 "type": "image",
                 "imageSettings": {
-                  "title": "SlotTo",
-                  "url": "{{.value.containerTo.slotPicture}}"
+                  "title": "LocationTo",
+                  "url": "{{.value.container.pictureTo}}",
+                  "base64": ""
                 }
               }
             },
             {
               "name": "InputData",
-              "title": "Отсканируйте идентификатор ячейки",
               "input": {
                 "binding": {
-                  "id": "{{.value.containerTo.slotId}}",
-                  "type": "containerTo",
+                  "id": "{{.value.container.locationIdTo}}",
+                  "type": "container",
                   "field": "factId"
-                },
-                "placeholder": "Отсканируйте ID ячейки",
-                "scanner": true,
-                "required": true
+                }
               }
             }
           ],

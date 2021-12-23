@@ -1,0 +1,41 @@
+{
+  "componentId": "27e1d758-8adb-4140-800d-a5f7be9407d0",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Тара для комплектования и тара с ТМЦ подготовлены для операции 'Комплектование'. Проследуйте к месту комплектования ТМЦ.",
+                "table": [
+                  [
+                    "Месторасположение"
+                  ],
+                  [
+                    "{{.value.location.name}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "LocationPicture",
+                  "url": "{{.value.location.picture}}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

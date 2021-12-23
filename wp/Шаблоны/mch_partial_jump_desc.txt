@@ -1,0 +1,40 @@
+{
+  "{{if .jumpDesc}}": {
+    "{{$table}}": {
+      "group": false,
+      "header": [
+        "Рекомендация",
+        "Контролируемый параметр",
+        "Инструмент",
+        "Номинальное значение",
+        "Значение"
+      ],
+      "fields": [
+        "guidance",
+        "controlParam",
+        "tool",
+        "nominalVal",
+        {
+          "{{if '.val' == 'input'}}": {
+            "id": "{{$new_id jump_desc_input}}",
+            "name": "InputData",
+            "input": {
+              "required": true,
+              "binding": {
+                "id": "{{$new_id jump_desc_input}}",
+                "type": "jump_desc",
+                "field": "value"
+              }
+            }
+          },
+          "{{else}}": "val"
+        }
+      ]
+    },
+    "name": "ParamsTable",
+    "input": {
+      "title": "Описание перехода и контролируемые параметры",
+      "table": "{{$table .jumpDesc}}"
+    }
+  }
+}

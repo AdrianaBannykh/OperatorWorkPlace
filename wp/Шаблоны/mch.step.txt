@@ -1,0 +1,196 @@
+{
+  "{{$mb_2}}": {
+    "className": "col mb-2"
+  },
+  "id": "root_mch_layout_template",
+  "name": "Layout",
+  "input": {
+    "variant": "table",
+    "layout": [
+      {
+        "tag": "container",
+        "attributes": {
+          "fluid": true
+        },
+        "children": [
+          {
+            "tag": "row",
+            "children": [
+              {
+                "tag": "col",
+                "children": "{post_1}"
+              },
+              {
+                "tag": "col",
+                "children": [
+                  {
+                    "tag": "row",
+                    "children": [
+                      {
+                        "tag": "col",
+                        "attributes": "{{$mb_2}}",
+                        "children": "{post_2}"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "row",
+                    "children": [
+                      {
+                        "tag": "col",
+                        "attributes": "{{$mb_2}}",
+                        "children": "{post_3}"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "row",
+                    "children": [
+                      {
+                        "tag": "col",
+                        "attributes": "{{$mb_2}}",
+                        "children": "{post_4}"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "row",
+                    "children": [
+                      {
+                        "tag": "col",
+                        "attributes": "{{$mb_2}}",
+                        "children": "{post_5}"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "row",
+                    "children": [
+                      {
+                        "tag": "col",
+                        "attributes": "{{$mb_2}}",
+                        "children": "{post_7}"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "row",
+                    "children": [
+                      {
+                        "tag": "col",
+                        "children": "{post_6}"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "posts": [
+      {
+        "id": "post_1",
+        "name": "Post",
+        "input": {
+          "title": "{{ .value.title}}",
+          "components": [
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "Изображение отсутствует",
+                  "url": "{{ .value.imageUrl}}",
+                  "base64": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "post_2",
+        "name": "Post",
+        "input": {
+          "components": [
+            "{{$partial mch_partial_components .value}}"
+          ]
+        }
+      },
+      {
+        "id": "post_3",
+        "name": "Post",
+        "input": {
+          "components": [
+            "{{$partial mch_partial_tools .value}}"
+          ]
+        }
+      },
+      {
+        "id": "post_4",
+        "name": "Post",
+        "input": {
+          "components": [
+            "{{$partial mch_partial_jump_desc .value}}"
+          ]
+        }
+      },
+      {
+        "id": "post_5",
+        "name": "Post",
+        "input": {
+          "components": [
+            "{{$partial mch_partial_control_params .value}}"
+          ]
+        }
+      },
+      {
+        "id": "post_6",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "CheckBox",
+              "input": {
+                "title": "Нештатная ситуация"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "post_7",
+        "name": "Post",
+        "input": {
+          "components": [
+            "{{$partial mch_partial_control_params_select .value}}"
+          ]
+        }
+      }
+    ]
+  },
+  "output": {
+    "post_2": {
+      "components": {
+        "noname": {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "noname": {
+            "{{foreach .images}}": {
+              "smBody": "{{.}}"
+            }
+          }
+        },
+        "bindings": [
+          {
+            "deleted": false,
+            "id": "00000000-0000-0000-0000-000000000000",
+            "type": "noname"
+          }
+        ],
+        "componentName": "Post"
+      }
+    }
+  }
+}

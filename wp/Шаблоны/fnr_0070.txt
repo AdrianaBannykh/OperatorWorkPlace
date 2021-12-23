@@ -1,0 +1,57 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "86ddc4e9-da58-4c1c-b630-1a65e3627355",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Подготовьте дополнительный ресурс для перемещения ТМЦ",
+                "table": [
+                  [
+                    "Дополнительный ресурс"
+                  ],
+                  [
+                    "{{.value.resource.name}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "ID дополнительного ресурса"
+                  ],
+                  [
+                    "{{.value.resource.id}}"
+                  ]
+                ]
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

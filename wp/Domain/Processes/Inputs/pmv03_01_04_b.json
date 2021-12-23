@@ -1,0 +1,88 @@
+﻿{
+  "value": {
+    "containers": [
+      {
+        "id": "TS-00457",
+        "weight": 2.85,
+        "size": "800x600x20",
+        "location": {
+          "from": {
+	          "room": "M144",
+            "name": "M144-B001",
+            "id": "a8c50311-0e7b-4871-bb00-6e7c770c3443",
+            "picture": "https://iems.diakont.ru:3012/doc/M144-B001.jpg"
+       },
+            "to": {
+            "room": "M120",
+            "id": [
+              "f9c32f4c-da48-4e3d-90ef-adabae63506b",
+              "450fab9d-d575-43e6-a71c-8c0588c0d52f",
+              "59ac05dc-e2e7-4fd0-a83f-bb6ffe346e2b",
+              "57b2773f-dffb-4e7a-8fad-24cd5a113941",
+              "8058a35b-b372-4181-ba0a-a700380c65cf",
+              "cb76a25a-fac7-429e-8ab5-3d60c33ad3ea",
+              "c2f03ccd-c3d5-40f1-b9c3-c46ffd4dfcd4",
+              "7d422cc2-77d5-43df-b9d2-1b5ba240a8e5",
+              "4d632289-bda5-4b30-8704-0553f709b426",
+              "0b025fe1-934d-431b-8014-64b264111d05",
+              "246c335c-c1c2-4f87-9d3e-1a9414011b55",
+              "1f350e9b-b156-4e2e-9c71-fc0eb4e6a324",
+              "2170ed1d-5f33-479e-99f5-e4e46cadcce4",
+              "232603f4-a52d-44e2-ae5c-376c1b775704",
+              "035584e7-80ee-4271-b403-8260729b8937",
+              "77ecf121-cb02-4380-b29e-904c1abfe0fb",
+              "6fee0714-0b13-4946-9fcf-a00c32ba4a54",
+              "391bb21a-e4c9-4e3a-ab45-d312b9076c53",
+              "757073af-7a77-4d10-8c65-73518a0f140b",
+              "7bf837c1-dfe8-4ed7-944e-a793da98bec1",
+              "ffe7ce20-3e84-4080-9fa2-f076361fb571",
+              "5e76b9a7-39ba-4b14-917c-e5b43853cbb6",
+              "05786cec-25e0-4747-85b9-373122fc0ab4",
+              "bb350de9-edeb-4dc7-b1f2-d605d627d612",
+              "47a0a4db-4071-41a1-b52a-6044098e8b08",
+              "f462f7e0-c45d-4946-9111-d88af27e5f32",
+              "b4bcef52-3986-43f8-994b-0d49814104a7",
+              "f97ea8e3-850c-4a4e-9df0-24572f7cf6b0",
+              "8cb64319-9ff0-4c5d-9ce7-3e69558dd1f9",
+              "26609147-a82a-42d4-84d9-02133ea768f8"
+            ],
+            "picture": "https://iems.diakont.ru:3012/doc/M120.jpg"
+          }
+        }
+      },
+      {
+        "id": "TS-99991",
+        "weight": 7.85,
+        "size": "800x600x20",
+        "location": {
+          "from": {
+	          "room": "M131",
+            "name": "M131-MB02",
+            "id": "0d008da5-4424-4a34-a5c7-3c0f7126f22f",
+            "picture": "https://iems.diakont.ru:3012/doc/M131-MB02.jpg"
+       },
+            "to": {
+            "room": "M145",
+            "id": [
+              "2d03156b-b385-47cd-a731-ac9a96143c2e",
+              "b5b948a2-4fec-4945-b778-d5bfed15204d",
+              "7a1e7b71-f76c-45a2-8d88-e2b3607e3184",
+              "c3fb5481-df13-443e-a5d7-6c495408f21e",
+              "e9763bef-c3ec-4991-8c79-c23f04d8f746",
+              "7b758a3b-e0f2-4fae-848b-d126b18ba50a",
+              "b97ce66e-61c8-44ee-ae68-ce76ee62fb03",
+              "3c35158f-dbff-4679-a0b9-57ca90c5c188",
+              "12105817-88c0-4f4e-8c24-9b5dbb9b20f4",
+              "93369697-f8b1-4ea6-9fa0-ba7be0c15a84"
+            ],
+            "picture": ""
+          }
+        }
+      }
+    ],
+    "resource": {
+      "id": "T0000123",
+      "name": "Тележка"
+    }
+  }
+}

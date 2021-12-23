@@ -1,0 +1,44 @@
+{
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "c90d8a3e-71b6-4a81-afd6-c53abe6a3362",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "title": "Верните дополнительный ресурс на место хранения",
+                "table": [
+                  [
+                    "Дополнительный ресурс"
+                  ],
+                  [
+                    "{{.value.resource.name}} {{.value.resource.id}}"
+                  ]
+                ]
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

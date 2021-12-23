@@ -1,0 +1,42 @@
+{
+  "{{if '.controlParams[0].option.name' == 'number'}}": {
+    "{{$table}}": {
+      "group": false,
+      "header": [
+        "Контролируемый параметр",
+        "Инструмент",
+        "Минимальное значение",
+        "Максимальное значение",
+        "Значение"
+      ],
+      "fields": [
+        "type",
+        "tool",
+        ".option.lLD",
+        ".option.uLD",
+        {
+          "id": "{{$new_id control_param_input}}",
+          "name": "InputData",
+          "input": {
+            "placeholder": "Введите значение",
+            "binding": {
+              "id": "{{$new_id control_param_input}}",
+              "type": "controlParam",
+              "field": "value"
+            },
+            "pattern": {
+              "regular": "",
+              "message": "Отсканировано неверное значение"
+            },
+            "required": true
+          }
+        }
+      ]
+    },
+    "name": "ParamsTable",
+    "input": {
+      "title": "Контролируемые параметры, инструмент и ввод фактических значений",
+      "table": "{{$table .controlParams}}"
+    }
+  }
+}

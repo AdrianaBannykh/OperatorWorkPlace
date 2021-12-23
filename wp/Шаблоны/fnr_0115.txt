@@ -1,6 +1,6 @@
 {
   "{{$deviation_title}}": "Нештатная ситуация",
-  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentId": "44be9169-2256-45ee-bb9f-7017d9fcfc88",
   "componentName": "Layout",
   "input": {
     "variant": "list",
@@ -9,42 +9,37 @@
         "id": "{{$new_id post}}",
         "name": "Post",
         "input": {
-          "title": "Размещение скомплектованных ТМЦ",
           "components": [
             {
               "name": "ParamsTable",
               "input": {
-                "title": "Определите положение ячейки в таре по обозначению и изображению. Отсканируйте ID ячейки. Разместите ТМЦ в ячейке.",
+                "title": "Пройдите к указанному месту хранения, отсканируйте штрихкод идентификатора тары с ТМЦ. Разместите тару на рабочем месте комплектования",
                 "table": [
                   [
-                    "Обозначение ячейки"
+                    "Место хранения",
+                    "Тара"
                   ],
                   [
-                    "{{.value.containerTo.slotName}}"
+                    "{{.value.containerFrom.place}}",
+                    "{{.value.containerFrom.taraName}}"
                   ]
                 ]
               }
             },
             {
-              "name": "FileViewer",
-              "input": {
-                "type": "image",
-                "imageSettings": {
-                  "title": "SlotTo",
-                  "url": "{{.value.containerTo.slotPicture}}"
-                }
-              }
-            },
-            {
               "name": "InputData",
-              "title": "Отсканируйте идентификатор ячейки",
+              "title": "Подтвердите выбор тары",
               "input": {
                 "binding": {
-                  "id": "{{.value.containerTo.slotId}}",
-                  "type": "containerTo",
+                  "id": "{{.value.containerFrom.id}}",
+                  "type": "containerFrom",
                   "field": "factId"
                 },
-                "placeholder": "Отсканируйте ID ячейки",
+                "pattern": {
+                  "regular": "^{{.value.containerFrom.id}}",
+                  "message": "Отсканирован неверный ID тары"
+                },
+                "placeholder": "Отсканируйте ID тары",
                 "scanner": true,
                 "required": true
               }

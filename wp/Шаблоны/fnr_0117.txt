@@ -1,6 +1,6 @@
 {
   "{{$deviation_title}}": "Нештатная ситуация",
-  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentId": "bd3ffb85-583b-4f95-a2ef-af02fc39efe2",
   "componentName": "Layout",
   "input": {
     "variant": "list",
@@ -9,18 +9,17 @@
         "id": "{{$new_id post}}",
         "name": "Post",
         "input": {
-          "title": "Размещение скомплектованных ТМЦ",
           "components": [
             {
               "name": "ParamsTable",
               "input": {
-                "title": "Определите положение ячейки в таре по обозначению и изображению. Отсканируйте ID ячейки. Разместите ТМЦ в ячейке.",
+                "title": "Выберите ячейку в 'Таре с ТМЦ' в соответствии с рисунком ниже",
                 "table": [
                   [
                     "Обозначение ячейки"
                   ],
                   [
-                    "{{.value.containerTo.slotName}}"
+                    "{{.value.slotName}}"
                   ]
                 ]
               }
@@ -30,8 +29,8 @@
               "input": {
                 "type": "image",
                 "imageSettings": {
-                  "title": "SlotTo",
-                  "url": "{{.value.containerTo.slotPicture}}"
+                  "title": "SlotFrom",
+                  "url": "{{.value.slotPicture}}"
                 }
               }
             },
@@ -40,9 +39,13 @@
               "title": "Отсканируйте идентификатор ячейки",
               "input": {
                 "binding": {
-                  "id": "{{.value.containerTo.slotId}}",
-                  "type": "containerTo",
+                  "id": "{{.value.slotId}}",
+                  "type": "slotFrom",
                   "field": "factId"
+                },
+                "pattern": {
+                  "regular": "^{{.value.slotId}}$",
+                  "message": "Отсканирован неверный ID ячейки"
                 },
                 "placeholder": "Отсканируйте ID ячейки",
                 "scanner": true,

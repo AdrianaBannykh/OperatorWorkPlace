@@ -1,0 +1,63 @@
+{
+  "{{$component_photos_id}}": "{{$new_id component_photos}}",
+  "{{if .components}}": {
+    "{{$table}}": {
+      "group": false,
+      "header": [
+        "ТМЦ",
+        "Код",
+        "Quantity",
+        "Storage location",
+        "Изображение",
+        "Подтверждение ID"
+      ],
+      "fields": [
+        "name",
+        "code",
+        "count",
+        "storagePlace",
+        {
+          "{{if .images}}": {
+            "name": "Photos",
+            "input": {
+              "readOnly": true,
+              "defaultImages": [
+                {
+                  "smBody": "{{.images}}",
+                  "lgBody": "{{.images}}"
+                }
+              ]
+            }
+          },
+          "{{else}}": "{{.images}}"
+        },
+        {
+          "{{if '.itemId' == 'scanner'}}": {
+            "name": "InputData",
+            "input": {
+              "binding": {
+                "id": "{{.id}}",
+                "type": "container",
+                "field": "factId"
+              },
+              "pre": "{{.id}}",
+              "placeholder": "Scan ID",
+              "pattern": {
+                "regular": "^{{.id}}$",
+                "message": "Отсканирован неверный ID"
+              },
+              "scanner": true,
+              "required": true
+            }
+          },
+          "{{else}}": "{{.itemId}}"
+        }
+      ]
+    },
+    "name": "ParamsTable",
+    "input": {
+      "title": "Компоненты",
+      "table": "{{$table .components}}"
+    }
+  }
+}

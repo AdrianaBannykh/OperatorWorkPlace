@@ -1,0 +1,262 @@
+{
+    "value": {
+        "steps": [
+                    {
+                        "id": "12005.01",
+                        "type": "TCD",
+                        "title": "Подготовка деталей к складскому хранению",
+                        "imageUrl": "",
+                        "components" : [                    
+                            {
+                            "id":1,
+                            "name": "Деталь (код МАХ)",
+                            "code": "код МАХ",
+                            "count": 20,
+                            "storagePlace": "M126-LB03",
+                            "itemId": "scanner",
+                            "images":[
+                            {"link": "https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                            ]
+                            }
+                        ],
+                        "tools":[
+                            {
+                            "toolsId" : 1,
+                            "name": "Корзина мойки (код МАХ)",
+                            "code": "код МАХ",
+                            "count": 1,
+                            "storagePlace": "Не определено",
+                            "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                            ]
+                            },
+                            {
+                                "toolsId" : 2,
+                                "name": "Органайзер мойки (код МАХ)",
+                                "code": "код МАХ",
+                                "count": 1,
+                                "storagePlace": "Не определено",
+                                "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                                ]
+                            },
+                            {
+                                "toolsId" : 3,
+                                "name": "Тара хранения (TS-0001)",
+                                "code": "TS-0001",
+                                "count": 1,
+                                "storagePlace": "Не определено",
+                                "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12005.01.01",
+                        "title": "Установить корзину мойки в ванну №1",
+                        "imageUrl": "",
+                        "type": "EXT",
+                        "tools":[
+                            {
+                              "toolsId" : 1,
+                              "name": "Корзина мойки (код МАХ)",
+                              "code": "код МАХ",
+                              "count": 1,
+                              "storagePlace": "Не определено",
+                              "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                               ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12005.01.02",
+                        "title": "Установить органайзер мойки в корзину мойки",
+                        "imageUrl": "",
+                        "type": "EXT",
+                        "tools":[
+                            {
+                              "toolsId" : 1,
+                              "name": "Органайзер мойки (код МАХ)",
+                              "code": "код МАХ",
+                              "count": 1,
+                              "storagePlace": "Не определено",
+                              "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                               ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12005.01.03",
+                        "title": "Перетарировать заготовки в органайзер мойки",
+                        "imageUrl": "",
+                        "type": "EXT",
+                        "components" : [                    
+                            {
+                            "id":1,
+                            "name": "Деталь (код МАХ)",
+                            "code": "код МАХ",
+                            "count": 20,
+                            "storagePlace": "M126-LB03",
+                            "itemId": "scanner",
+                            "images":[
+                              {"link": "https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                            ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12005.01.04",
+                        "title": "Настроить режимы обработки",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.05",
+                        "title": "Запустить обработку",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.01",
+                        "title": "Обработка",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.01",
+                        "title": "Извлечь корзину мойки из ванны №1 и разместить в ванну №2",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.01",
+                        "title": "Настроить режимы обработки",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.03",
+                        "title": "Запустить обработку",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.1",
+                        "title": "Обработка",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.1",
+                        "title": "Извлечь корзину мойки из ванны №2 и разместить в ванну №3",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.2",
+                        "title": "Настроить режимы обработки",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.3",
+                        "title": "Запустить обработку",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.1",
+                        "title": "Обработка",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.1",
+                        "title": "Извлечь корзину мойки из ванны №3 и разместить в сушильную камеру",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.2",
+                        "title": "Настроить режимы обработки",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.3",
+                        "title": "Запустить обработку",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.1",
+                        "title": "Обработка",
+                        "imageUrl": "",
+                        "type": "STD"
+                    },
+                    {
+                        "id": "12005.01.1",
+                        "title": "Перетарировать заготовки из органайзера мойки в тару хранения",
+                        "imageUrl": "",
+                        "type": "PUT",
+                        "components" : [                    
+                            {
+                            "id":1,
+                            "name": "Деталь (код МАХ)",
+                            "code": "код МАХ",
+                            "count": 20,
+                            "storagePlace": "M126-LB03",
+                            "itemId": "scanner",
+                            "images":[
+                              {"link": "https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                            ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12005.01.2",
+                        "title": "Извлечение органайзера мойки из корзины мойки",
+                        "imageUrl": "",
+                        "type": "PUT",
+                        "tools":[
+                            {
+                              "toolsId" : 1,
+                              "name": "Органайзер мойки (код МАХ)",
+                              "code": "код МАХ",
+                              "count": 1,
+                              "storagePlace": "Не определено",
+                              "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                               ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12005.01.3",
+                        "title": "Извлечь корзину мойки из сушильной камеры",
+                        "imageUrl": "",
+                        "type": "PUT",
+                        "tools":[
+                            {
+                              "toolsId" : 1,
+                              "name": "Корзина мойки (код МАХ)",
+                              "code": "код МАХ",
+                              "count": 1,
+                              "storagePlace": "Не определено",
+                              "images": [
+                                    {"link":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"}
+                               ]
+                            }
+                        ]
+                    }
+                ]
+            },
+   
+        "description": {
+        "Number": "12005",
+        "operations": "Консервация"
+        }
+}

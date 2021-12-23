@@ -1,0 +1,8 @@
+[
+  {
+    "{{foreach .value.steps}}": {
+      "operationId": "bb88af46-10a8-4701-b22b-68fc9ed3cf73",
+      "value": "{{.}}"
+    }
+  }
+]

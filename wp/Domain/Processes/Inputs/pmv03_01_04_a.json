@@ -1,0 +1,48 @@
+﻿{
+  "value": {
+    "containers": [
+      {
+        "id": "TS-00457",
+        "weight": 2.85,
+        "size": "800x600x20",
+        "location": {
+          "from": {
+	    "room": "M144",
+            "id": "a8c50311-0e7b-4871-bb00-6e7c770c3443",
+            "name": "M144-B001",
+            "picture": "https://iems.diakont.ru:3012/doc/M144-B001.jpg"
+       },
+            "to": {
+            "room": "M120",
+            "id": "1f3b88ea-4f8d-469f-bf0d-5969b23347f5",
+            "name": "M120-MI01",
+            "picture": "https://iems.diakont.ru:3012/doc/M120-B001.jpg"
+          }
+        }
+      },
+      {
+        "id": "TS-99991",
+        "weight": 7.85,
+        "size": "800x600x20",
+        "location": {
+          "from": {
+	    "room": "M131",
+            "id": "0d008da5-4424-4a34-a5c7-3c0f7126f22f",
+            "name": "M131-MB02",
+            "picture": "https://iems.diakont.ru:3012/doc/M131-MB02.jpg"
+       },
+            "to": {
+            "room": "M120",
+            "id": "7fcac3f0-66b1-4366-977c-748f59820626",
+            "name": "M120-BA02",
+            "picture": "https://iems.diakont.ru:3012/doc/M120-BA02.jpg"
+          }
+        }
+      }
+          ],
+    "resource": {
+      "id": "T0000123",
+      "name": "Тележка"
+    }
+  }
+}

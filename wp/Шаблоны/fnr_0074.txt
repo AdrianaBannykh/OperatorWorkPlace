@@ -1,6 +1,6 @@
 {
   "{{$deviation_title}}": "Нештатная ситуация",
-  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentId": "6d1bacff-e7c2-47d0-b86b-6a44a9f7492e",
   "componentName": "Layout",
   "input": {
     "variant": "list",
@@ -9,42 +9,35 @@
         "id": "{{$new_id post}}",
         "name": "Post",
         "input": {
-          "title": "Размещение скомплектованных ТМЦ",
           "components": [
             {
               "name": "ParamsTable",
               "input": {
-                "title": "Определите положение ячейки в таре по обозначению и изображению. Отсканируйте ID ячейки. Разместите ТМЦ в ячейке.",
+                "title": "Найдите тару с указанным ниже обозначением и подтвердите, отсканировав ID. Извлеките тару с места хранения.",
                 "table": [
                   [
-                    "Обозначение ячейки"
+                    "ID тары"
                   ],
                   [
-                    "{{.value.containerTo.slotName}}"
+                    "{{.value.container.id}}"
                   ]
                 ]
               }
             },
             {
-              "name": "FileViewer",
-              "input": {
-                "type": "image",
-                "imageSettings": {
-                  "title": "SlotTo",
-                  "url": "{{.value.containerTo.slotPicture}}"
-                }
-              }
-            },
-            {
               "name": "InputData",
-              "title": "Отсканируйте идентификатор ячейки",
+              "title": "Подтвердите выбор тары",
               "input": {
                 "binding": {
-                  "id": "{{.value.containerTo.slotId}}",
-                  "type": "containerTo",
+                  "id": "{{.value.container.id}}",
+                  "type": "container",
                   "field": "factId"
                 },
-                "placeholder": "Отсканируйте ID ячейки",
+                "pattern": {
+                  "regular": "{{.value.container.id}}",
+                  "message": "Отсканирован неверный ID тары"
+                },
+                "placeholder": "Отсканируйте ID тары",
                 "scanner": true,
                 "required": true
               }

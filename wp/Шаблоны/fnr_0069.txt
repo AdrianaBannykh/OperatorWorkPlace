@@ -1,0 +1,94 @@
+{
+  "{{$post_title}}": "Проследуйте к месту хранения тары",
+  "{{$deviation_title}}": "Нештатная ситуация",
+  "componentId": "62ce90b5-b192-41d8-a352-fc06c297f9ad",
+  "componentName": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "{{$new_id post}}",
+        "name": "Post",
+        "input": {
+          "title": "{{$post_title}}",
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "Номер помещения"
+                  ],
+                  [
+                    "{{.value.container.locationRoomFrom}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "Обозначение места хранения"
+                  ],
+                  [
+                    "{{.value.container.locationNameFrom}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "FileViewer",
+              "input": {
+                "type": "image",
+                "imageSettings": {
+                  "title": "Карта",
+                  "url": "{{.value.container.pictureFrom}}",
+                  "base64": ""
+                }
+              }
+            },
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": [
+                  [
+                    "ID места хранения"
+                  ],
+                  [
+                    "{{.value.container.locationIdFrom}}"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "InputData",
+              "input": {
+                "pattern": {
+                  "regular": "^{{.value.container.locationIdFrom}}$",
+                  "message": "Отсканирован неверный ID места хранения"
+                },
+                "placeholder": "Отсканируйте ID места хранения",
+                "scanner": true,
+                "required": true
+              }
+            }
+          ],
+          "deviation": {
+            "title": "{{$deviation_title}}",
+            "components": [
+              {
+                "name": "List",
+                "input": {
+                  "radio": true,
+                  "items": "{{$gen_reasons .value}}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "{{$post_title}}": "Ознакомьтесь с информацией для проведения документарного и количественного контроля",
+  "{{$table}}": {
+    "group": true,
+    "header": [
+      "Груз",
+      "Количество ",
+      "Место хранения",
+      "Место проведения контроля"
+    ],
+    "fields": [
+      "typePackaging",
+      "#count",
+      ".storage.name",
+      "$.value.placeOfControl"
+    ]
+  },
+  "id": "layout_1",
+  "name": "Layout",
+  "input": {
+    "variant": "list",
+    "posts": [
+      {
+        "id": "post_1",
+        "name": "Post",
+        "input": {
+          "title": "{{$post_title}}",
+          "components": [
+            {
+              "name": "ParamsTable",
+              "input": {
+                "table": "{{$table .value.cargoPlaces}}"
+              }
+            },
+            {
+              "name": "Gallery",
+              "input": {
+                "enable": false
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

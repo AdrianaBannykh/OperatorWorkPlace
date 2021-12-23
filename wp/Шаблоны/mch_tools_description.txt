@@ -1,0 +1,54 @@
+{
+  "{{if .tools}}": {
+    "{{$table}}": {
+      "key": "toolsId",
+      "group": false,
+      "header": [
+        "ID",
+        "Инструмент",
+        "Код",
+        "Количество",
+        "Место хранения",
+        "Изображение"
+      ],
+      "fields": [
+        "toolsId",
+        "name",
+        "code",
+        "count",
+        "storagePlace",
+        {
+          "name": "Photos",
+          "input": {
+            "readOnly": true,
+            "variant": "image",
+            "binding": {
+              "id": "{{$new_id component_photos}}",
+              "type": "images",
+              "field": "values"
+            }
+          },
+          "{{if .images}}": {
+            "output": {
+              "images": {
+                "id": "{{$new_id component_photos}}",
+                "values": [
+                  {
+                    "{{foreach .images}}": {
+                      "smBody": "{{.}}"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "name": "ParamsTable",
+    "input": {
+      "title": "Инструменты",
+      "table": "{{$table .tools}}"
+    }
+  }
+}

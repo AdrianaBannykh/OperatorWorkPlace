@@ -1,0 +1,105 @@
+﻿{
+  "value": {
+    "location": {
+      "name": "M131-MB02",
+      "picture": "https://iems.diakont.ru:3012/doc/M131-MB02.jpg",
+      "containerFrom": {
+        "id": "TS12345", 
+        "name": "TS12345",
+        "place": "M131-MB02",
+        "picture": "https://iems.diakont.ru:3012/doc/visual.jpg",
+        "slots": [
+          {
+            "item": [
+            {
+              "slotId": "2326dab3-79ff-4a88-aeb3-7fb6ff66fb3d",
+              "slotName": "Cell-A-1",
+              "slotPicture": "https://iems.diakont.ru:3012/doc/TS-0007-CELL-A-1.jpg",
+              "id": "89d92c0b-dbfe-4430-9a20-cdf97744755e",
+              "number": "00012453",
+              "description": "Датчик ISO 20458",
+              "typeCode": "B",
+              "quantity": "1",
+              "unitOfMeasurement": "шт",
+              "serialNumber": "XXX666"
+            },
+            {
+              "slotId": "2326dab3-79ff-4a88-aeb3-7fb6ff66fb3d",
+              "slotName": "Cell-A-1",
+              "slotPicture": "https://iems.diakont.ru:3012/doc/TS-0007-CELL-A-1.jpg",
+              "id": "3f38d4e8-3293-4657-82c0-20ba28688118",
+              "number": "00012453",
+              "description": "Датчик ISO 20458",
+              "typeCode": "B",
+              "quantity": "1",
+              "unitOfMeasurement": "шт",
+              "serialNumber": "XXX667"
+            },
+            {
+              "slotId": "2326dab3-79ff-4a88-aeb3-7fb6ff66fb3d",
+              "slotName": "Cell-A-1",
+              "slotPicture": "https://iems.diakont.ru:3012/doc/TS-0007-CELL-A-1.jpg",
+              "id": "a0373051-ddb8-475f-a52a-e76a3ff21b61",
+              "number": "00012453",
+              "description": "Датчик ISO 20458",
+              "typeCode": "B",
+              "quantity": "1",
+              "unitOfMeasurement": "шт",
+              "serialNumber": "XXX668"
+            },
+            {
+              "slotId": "2326dab3-79ff-4a88-aeb3-7fb6ff66fb3d",
+              "slotName": "Cell-A-1",
+              "slotPicture": "https://iems.diakont.ru:3012/doc/TS-0007-CELL-A-1.jpg",
+              "id": "bd28a0c2-5935-468a-9be1-ce7b2ed929a9",
+              "number": "00012453",
+              "description": "Датчик ISO 20458",
+              "typeCode": "B",
+              "quantity": "1",
+              "unitOfMeasurement": "шт",
+              "serialNumber": "XXX669"
+            }
+          ]     
+        },
+        {
+          "item":[
+            {
+              "slotId": "2c192c8a-bbd5-45ea-aa17-b0dddf4f630d",
+              "slotName": "Cell-A-2",
+              "slotPicture": "https://iems.diakont.ru:3012/doc/TS-0007-CELL-A-2.jpg",
+              "id": "1dd516d2-b74a-470e-a3de-4501188a24ce",
+              "number": "00012454",
+              "description": "Уголок 20000",
+              "typeCode": "C",
+              "quantity": "8",
+              "unitOfMeasurement": "шт",
+              "picture":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"
+          },
+          {
+              "slotId": "2c192c8a-bbd5-45ea-aa17-b0dddf4f630d",
+              "slotName": "Cell-A-2",
+              "slotPicture": "https://iems.diakont.ru:3012/doc/TS-0007-CELL-A-2.jpg",
+              "id": "4fc2ef72-0abc-4b6c-b395-2f01482d53ea",
+              "number": "00012454",
+              "description": "Уголок 20000",
+              "typeCode": "C",
+              "quantity": "10",
+              "unitOfMeasurement": "шт",
+              "picture":"https://iems.diakont.ru:3012/doc/noimageitem.jpg"
+          }
+        ]
+        }
+      ]
+      },
+      "containerTo": {
+        "id": "TS12346",
+        "name": "TS12346",
+        "place": "M131-MB04",
+        "picture": "https://iems.diakont.ru:3012/doc/visual.jpg",
+        "slotId": "",
+        "slotName": "",
+        "slotPicture": ""
+      } 
+    }
+  }
+}

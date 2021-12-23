@@ -1,6 +1,6 @@
 {
   "{{$deviation_title}}": "Нештатная ситуация",
-  "componentId": "ee70408d-47f9-4e80-ac06-bab51733cd04",
+  "componentId": "8e4c5513-af09-4ddd-8c1f-4e62bf2db7df",
   "componentName": "Layout",
   "input": {
     "variant": "list",
@@ -9,18 +9,19 @@
         "id": "{{$new_id post}}",
         "name": "Post",
         "input": {
-          "title": "Размещение скомплектованных ТМЦ",
           "components": [
             {
               "name": "ParamsTable",
               "input": {
-                "title": "Определите положение ячейки в таре по обозначению и изображению. Отсканируйте ID ячейки. Разместите ТМЦ в ячейке.",
+                "title": "Сравните внешний вид ТМЦ с изображением ниже. Извлеките ТМЦ из ячейки в указанном ниже количестве.",
                 "table": [
                   [
-                    "Обозначение ячейки"
+                    "Обозначение",
+                    "Наименование"
                   ],
                   [
-                    "{{.value.containerTo.slotName}}"
+                    "{{.value.item.number}}",
+                    "{{.value.item.description}}"
                   ]
                 ]
               }
@@ -30,23 +31,25 @@
               "input": {
                 "type": "image",
                 "imageSettings": {
-                  "title": "SlotTo",
-                  "url": "{{.value.containerTo.slotPicture}}"
+                  "title": "LocationTo",
+                  "url": "{{.value.item.picture}}",
+                  "base64": ""
                 }
               }
             },
             {
-              "name": "InputData",
-              "title": "Отсканируйте идентификатор ячейки",
+              "name": "ParamsTable",
               "input": {
-                "binding": {
-                  "id": "{{.value.containerTo.slotId}}",
-                  "type": "containerTo",
-                  "field": "factId"
-                },
-                "placeholder": "Отсканируйте ID ячейки",
-                "scanner": true,
-                "required": true
+                "table": [
+                  [
+                    "Количество",
+                    "ЕИ"
+                  ],
+                  [
+                    "{{.value.item.quantity}}",
+                    "{{.value.item.unitOfMeasurement}}"
+                  ]
+                ]
               }
             }
           ],
