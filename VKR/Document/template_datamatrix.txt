@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<page width="50mm" height="50mm" padding="3mm">
+		<table>
+			<colgroup>
+				<col content-align="left" width="11mm" />
+				<col content-align="left" width="39mm" />
+			</colgroup>
+			<tbody fontFamily="Verdana" fontSize="8.5">
+				<tr>
+					<td>Nome</td>
+					<td>{name}</td>
+				</tr>
+				<tr>
+					<td>Code</td>
+					<td>{code}</td>
+				</tr>
+				<tr>
+					<td>Partita</td>
+					<td>{batch}</td>
+				</tr>
+				<tr>
+					<td>SN</td>
+					<td>{serialNumber}</td>
+				</tr>
+			</tbody>
+		</table>
+		<barcode height="13mm" format="data-matrix" align="bottomcenter">{id}</barcode>
+	</page>
+</document>
